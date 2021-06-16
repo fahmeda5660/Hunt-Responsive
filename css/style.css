@@ -66,6 +66,7 @@ nav {
     width: 100%;
     z-index: 9999;
     border-bottom: 1px solid #fec600;
+    transition: .4s;
 }
 
 nav ul li {
@@ -111,7 +112,44 @@ nav ul li a:hover::after {
 nav ul li a:hover {
     color: #fec600 !important;
 }
-
+#search-part{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+}
+#search-part .close{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#search-part .close:hover{
+    color: red;
+}
+#search-part .search-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-part .search-box input{ 
+   width: 80%;
+   background: #fff;
+   border: 0;
+   border-radius: 30px;
+   padding: 20px;
+}
+.menu-fixed{
+    position: fixed !important;
+    background: #000 !important;
+}
 /* *********************************NAVBAR END********************************** */
 /* *********************************BANNER START********************************** */
 #banner-part .banner {
@@ -132,7 +170,14 @@ nav ul li a:hover {
     background: url(../images/banner2.jpg) no-repeat;
     background-size: cover;
 }
-
+/* Bootsrap slider button */
+/* #banner-part button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} */
 #banner-part .banner .overlay {
     width: 100%;
     height: 100%;
@@ -202,6 +247,8 @@ nav ul li a:hover {
 #banner-part .prev:hover, #banner-part .next:hover{
     color: #fec600;
 }
+/* --------------------------------------------SEARCH PART START---------------------------------- */
+/* --------------------------------------------SEARCH PART END---------------------------------- */
 /* *********************************BANNER END********************************** */
 /* *********************************ABOUT START********************************** */
 /* item1 */
@@ -746,165 +793,112 @@ nav ul li a:hover {
 }
 /* ---------------------testimonial part end--------------------------- */
 /* ---------------------price part start--------------------------- */
-#price-part {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-#price-part .title {
-    text-align: center;
-}
-
-#price-part .title h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    color: #111111;
-    margin-top: 50px;
-    margin-bottom: 24px;
-}
-
-#price-part .title p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #444444;
-    padding: 0px 380px;
-    margin-bottom: 0;
-}
-
-#price-part .main {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#price-part .one {
-    width: 30%;
-    background: #f1f1f1;
-    position: relative;
-}
-
-#price-part .one .price-head {
-    background: #444444;
-    -webkit-clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
-    clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
-    transition: all linear .4s;
-}
-
-#price-part .one .price-head h3 {
-    padding-top: 30px;
+#pricing .box {
+    background-color: #f1f1f1;
+    margin-top: 70px;
+    transition: 0.3s;
+  }
+  
+  #pricing .box:focus,
+  #pricing .box:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04);
+  }
+  
+  #pricing .box h3 {
+    background-color: #444;
+    padding: 30px 0 70px;
     color: #fff;
-    padding-bottom: 120px;
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    transition: all linear .4s;
-}
-
-#price-part .one:hover .price-head h3 {
+    clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
+    transition: 0.3s;
+  }
+  
+  #pricing .box:focus h3,
+  #pricing .box:hover h3 {
+    background-color: #fec600;
+  }
+  
+  #pricing .details {
+    padding-top: 80px;
+    background-color: #f1f1f1;
+    position: relative;
+  }
+  
+  #pricing .details ul li {
+    text-align: center;
     color: #444444;
-}
-
-#price-part .one:hover .price-head {
-    background: #fec600;
-}
-
-#price-part .one .round {
-    width: 100px;
-    height: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  
+  #pricing .round {
+    background-color: #f1f1f1;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
-    border: 1px solid #444444;
-    background: #fff;
+    text-align: center;
     position: absolute;
-    top: 16%;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
-
-}
-
-#price-part .one .round .circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #444444;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  #pricing .inner-round {
+    background-color: #444;
+    height: 100px;
+    width: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all linear .4s;
-}
-
-#price-part .one:hover .round .circle {
-    background: #fec600;
-}
-
-#price-part .one .round .circle .price-rate {
-    text-align: center;
-    color: #fff;
-}
-
-#price-part .one .round .circle .price-rate p {
-    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  #pricing .box:focus .inner-round,
+  #pricing .box:hover .inner-round {
+    background-color: #fec600;
+  }
+  
+  #pricing .price {
+    margin-top: -10px !important;
     font-size: 28px;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-    transition: all linear .4s;
-}
-
-#price-part .one:hover .round .circle .price-rate p {
-    color: #444444;
-}
-
-#price-part .one .round .circle .price-rate .rate-p {
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-    padding-top: 0;
-}
-
-#price-part .one .price-details {
-    margin-top: 60px;
-    text-align: center;
-}
-
-#price-part .one .price-details ul li {
-    color: #444444;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-left: -20px;
-}
-
-#price-part .one .button {
-    background: #444444;
-    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
-    transition: all linear .4s;
-    text-align: center;
-    padding: 30px 0;
-}
-
-#price-part .one .button a {
-    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #pricing .join {
     display: inline-block;
+    width: 100%;
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+
+    background-color: #444;
+    text-align: center;
     color: #fff;
+    padding-top: 50px;
+    padding-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    margin-top: 10px;
-}
-
-#price-part .one:hover .button {
-    background: #fec600;
-}
-
-#price-part .one:hover .button a {
-    color: #444444;
-}
-
+    transition: 0.3s;
+  }
+  
+  #pricing .box:focus .join,
+  #pricing .box:hover .join {
+    background-color: #fec600;
+  }
 /* ---------------------price part end--------------------------- */
 /* ---------------------counter part start--------------------------- */
 #counter-part {
@@ -1201,6 +1195,16 @@ footer .social i:hover{
     background: #fec600;
 }
 /* ---------------------footer part end--------------------------- */
+.back-to-top{
+    padding: 15px 20px;
+    background: #fec600;
+    color: #000;
+    border: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 /* ---------------------footer bottom part start--------------------------- */
 #footer-bar-part{
     background: #353535;

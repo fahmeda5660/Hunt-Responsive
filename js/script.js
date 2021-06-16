@@ -1,3 +1,35 @@
+$(".search").click(function(){
+  $("#search-part").slideDown()
+});
+
+$(".close").click(function(){
+  $("#search-part").slideUp()
+});
+
+$(".back-to-top").click(function(){
+  $("html,body").animate({
+    scrollTop:0
+  },1000)
+});
+
+// $(window).scroll(function(){
+//   console.log($(window).scrollTop())
+// });
+
+$(window).scroll(function(){
+  if($(window).scrollTop() > 300){
+    $(".menu").addClass("menu-fixed")
+  }else{
+    $(".menu").removeClass("menu-fixed")
+  }
+
+  if($(window).scrollTop() > 600){
+    $(".back-to-top").fadeIn()
+  }else{
+    $(".back-to-top").fadeOut()
+  }
+ });
+
 $('.venobox').venobox(); 
 
 
