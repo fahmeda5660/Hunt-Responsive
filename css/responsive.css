@@ -1,0 +1,250 @@
+@media(min-width:320px) and (max-width: 575px) {
+
+    /* slider */
+    nav button i {
+        color: #fff;
+    }
+
+    nav ul {
+        background: #000;
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        display: none;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+    }
+
+    #banner-part .banner .overlay h2 {
+        font-size: 30px;
+    }
+
+    #banner-part .banner .overlay h3 {
+        font-size: 45px;
+    }
+
+    #banner-part .banner .overlay p {
+        margin: 10px auto;
+        padding: 0px 10px;
+    }
+
+    .carousel-control-prev {
+        top: 72%;
+        left: 30%;
+    }
+
+    .carousel-control-next {
+        top: 72%;
+        right: 30%;
+    }
+
+    #banner-part .banner .overlay {
+        padding: 140px 0px;
+    }
+
+    .common-title p {
+        padding: 0px;
+    }
+
+    /* about */
+    /* #about-part .round .img {
+        width: 240px;
+        height: 240px;
+    }
+    #about-part .round {
+        width: 280px;
+        height: 280px;
+    } */
+    #about-part .round {
+        display: none;
+    }
+
+    #about-part .col-lg-4 .item1,
+    #about-part .col-lg-4 .item2,
+    #about-part .col-lg-4 .item3,
+    #about-part .col-lg-4 .item4 {
+        padding: 20px 10px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #about-part .item1 i,
+    #about-part .item2 i,
+    #about-part .item3 i,
+    #about-part .item4 i {
+        display: none;
+    }
+
+    #about-part .col-lg-4 .item1 .shap,
+    #about-part .col-lg-4 .item2 .shap,
+    #about-part .col-lg-4 .item3 .shap,
+    #about-part .col-lg-4 .item4 .shap {
+        display: none;
+    }
+
+    .common-title p {
+        margin-bottom: 0;
+        padding: 0px 15px;
+    }
+
+    /* portfolio */
+    #portfolio-part {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    #portfolio-part .overlay {
+        padding: 50px 0;
+    }
+
+    #portfolio-part .overlay .common-title p {
+        margin-bottom: 20px;
+    }
+
+    #service-part .line {
+        display: none;
+    }
+
+    #service-part .service {
+        flex-direction: column;
+    }
+
+    #service-part .service:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    #service-part .service .title {
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    #service-part .service:nth-child(odd) .title {
+        justify-content: center;
+    }
+
+    #service-part .service .img {
+        width: 100%;
+        margin: 40px 0px;
+
+    }
+
+    #service-part .service .details {
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    #service-part .service-slider .prev {
+        top: 89%;
+        left: 25%;
+        transform: translateX(50%) rotate(270deg);
+        z-index: 9999;
+    }
+
+    #service-part .service-slider .next {
+        bottom: 4%;
+        right: 40%;
+        transform: translateX(50%) rotate(-90deg);
+    }
+
+    #service-part .service1 .details .shap,
+    #service-part .service3 .details .shap {
+        display: none;
+    }
+
+    #service-part .service2 .details .shap,
+    #service-part .service4 .details .shap {
+        display: none;
+    }
+
+    /* testimonial part */
+    #testimonial-part {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    #testimonial-part .row {
+        margin-top: 0px;
+    }
+
+    #testimonial-part .overlay {
+        padding: 80px 0px;
+    }
+
+    #testimonial-part .line {
+        display: none;
+    }
+
+    #testimonial-part .image-slider .prev {
+        top: -30px;
+    }
+
+    #testimonial-part .image-slider .next {
+        bottom: -30px;
+        z-index: 999;
+    }
+
+    #testimonial-part .details .shape {
+        display: none;
+    }
+
+    #testimonial-part .details {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    section#price-part {
+        margin-top: 50px;
+    }
+
+    #counter-part {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    #counter-part .overlay .item p {
+        font-size: 14px;
+    }
+
+    #counter-part .overlay {
+        padding: 55px 0;
+    }
+
+    .col {
+        margin-top: 20px;
+    }
+
+    #counter-part .rotate {
+        transform: rotate(0deg);
+    }
+
+    /* team */
+    #team-part .title p {
+        padding: 0;
+    }
+
+    #team-part .item {
+        margin-top: 50px;
+    }
+
+    #team-part .col-lg-3 {
+        height: auto;
+    }
+
+    /* sponsor slider */
+    #bottomSlider-part {
+        clip-path: polygon(0 0%, 100% 0, 100% 72%, 0% 100%);
+    }
+
+    footer .logo img {
+        transform: rotate(0deg);
+    }
+
+    footer .logo {
+        transform: rotate(0deg);
+    }
+
+    footer .details .item i {
+        margin: 20px;
+    }
+}

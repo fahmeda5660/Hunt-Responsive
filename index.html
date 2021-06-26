@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hunt</title>
-  <!-- font -->
+  <!-- google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/venobox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -26,7 +27,8 @@
       <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- ----------------- -->
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -34,25 +36,25 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About us</a>
+            <a class="nav-link" aria-current="page" href="#about-part">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Our Portfolio</a>
+            <a class="nav-link" aria-current="page" href="#portfolio-part">Our Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Our Services</a>
+            <a class="nav-link" aria-current="page" href="#service-part">Our Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Testimonial</a>
+            <a class="nav-link" aria-current="page" href="#testimonial-part">Testimonial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Pricing Plan</a>
+            <a class="nav-link" aria-current="page" href="#price-part">Pricing Plan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Our Team</a>
+            <a class="nav-link" aria-current="page" href="#team-part">Our Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Contact us</a>
+            <a class="nav-link" aria-current="page" href="#footer-part">Contact us</a>
           </li>
           <li class="nav-item search">
             <a class="nav-link"><i class="fas fa-search"></i></a>
@@ -83,7 +85,7 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                 has been the industry's standard dummy text.</p>
               <a href="#" class="vm0">View More</a>
-              <a href="#" class="vm1">View More</a>
+              <a href="#" class="vm1">Hire Us</a>
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                 has been the industry's standard dummy text.</p>
               <a href="#" class="vm0">View More</a>
-              <a href="#" class="vm1">View More</a>
+              <a href="#" class="vm1">Hire Us</a>
             </div>
           </div>
         </div>
@@ -107,7 +109,7 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                 has been the industry's standard dummy text.</p>
               <a href="#" class="vm0">View More</a>
-              <a href="#" class="vm1">View More</a>
+              <a href="#" class="vm1">Hire Us</a>
             </div>
           </div>
           <!-- <img src="images/banner2.jpg" class="d-block w-100" alt="bannar slide"> -->
@@ -497,7 +499,7 @@
   <!-- --------------------------------------------SERVICE PART END-------------------------------------------- -->
 
   <!-- -------------------------TESTIMONIAL PART START---------------------------------- -->
-  <section id="testimonial">
+  <section id="testimonial-part">
     <div class="overlay">
       <div class="container">
         <div class="row">
@@ -623,8 +625,8 @@
   </section>
   <!-- -------------------------TESTIMONIAL PART END----------------------------------- -->
   <!-- -------------------------PRICE PART START----------------------------------- -->
-  
-  <section id="pricing">
+
+  <section id="price-part">
     <div class="common-title">
       <h2>Pricing Plan</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's
@@ -649,7 +651,7 @@
                 <li>Wordpress Development</li>
               </ul>
             </div>
-            <a href="#pricing" class="join">Join Now</a>
+            <a href="#" class="join">Join Now</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -669,7 +671,7 @@
                 <li>IOS Application</li>
               </ul>
             </div>
-            <a href="#pricing" class="join">Join Now</a>
+            <a href="#" class="join">Join Now</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -689,7 +691,7 @@
                 <li>UX / UI Designs</li>
               </ul>
             </div>
-            <a href="#pricing" class="join">Join Now</a>
+            <a href="#" class="join">Join Now</a>
           </div>
         </div>
       </div>
@@ -699,8 +701,8 @@
   <!-- -------------------------COUNTER PART START----------------------------------- -->
   <section id="counter-part">
     <div class="overlay">
-      <div class="container">
-        <div class="roate">
+      <div class="rotate">
+        <div class="container">
           <div class="row">
             <div class="col">
               <div class="item">
@@ -736,7 +738,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <!-- -------------------------COUNTER PART END----------------------------------- -->
   <!-- -------------------------TEAM PART START----------------------------------- -->
@@ -832,7 +833,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -933,7 +933,7 @@
   <section id="footer-bar-part">
     <div class="container">
       <div class="copy-right">
-        <p>Copyright © 2017. All rights reserved by <a href="#">FAHMEDA</a></p>
+        <p>Copyright &#169 2017. All rights reserved by <a href="#">FAHMEDA</a></p>
       </div>
     </div>
   </section>
