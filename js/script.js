@@ -96,7 +96,7 @@ $('.port-slider').slick({
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           vertical:false,
         }
@@ -104,7 +104,7 @@ $('.port-slider').slick({
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           vertical:false,
         }
@@ -149,14 +149,14 @@ $('.bottom-slider').slick({
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },

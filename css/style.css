@@ -1051,26 +1051,6 @@ nav ul li a:hover {
     height: 500px;
 }
 
-#team-part .title {
-    text-align: center;
-}
-
-#team-part .title h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    color: #111111;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-#team-part .title p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #444444;
-    padding: 0 380PX;
-    margin-bottom: 0;
-}
 
 #team-part .item {
     margin-top: 80px;
